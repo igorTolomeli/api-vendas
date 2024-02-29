@@ -18,7 +18,6 @@ app.use((error: Error, req: Request, res: Response, next: NextFunction) => {
     return res.status(error.statusCode).json({
       status: 'error',
       message: error.message,
-
     })
   }
 
